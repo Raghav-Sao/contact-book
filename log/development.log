@@ -1,0 +1,2572 @@
+  [1m[36mActiveRecord::SchemaMigration Load (4.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36m (133.0ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (243.9ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (2.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 22:32:40 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 687ms (Views: 468.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 22:32:43 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 22:32:43 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 22:32:43 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 22:32:43 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 22:32:43 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 22:32:43 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 22:32:43 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 22:32:43 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 22:32:43 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 22:32:43 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 22:32:43 +0530
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 22:32:43 +0530
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (64.0ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SELECT `contacts`.* FROM `contacts`
+Completed 500 Internal Server Error in 134ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SELECT `contacts`.* FROM `contacts`):
+  app/controllers/contacts_controller.rb:8:in `block (2 levels) in index'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.7ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.9ms)
+
+
+Started POST "/contacts.json" for 127.0.0.1 at 2015-02-03 22:32:55 +0530
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"vjh", "phone"=>"56476476576", "email"=>"gfdhg@ghvfhj"}}
+Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`
+Completed 500 Internal Server Error in 36ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`):
+  app/controllers/contacts_controller.rb:14:in `create'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.4ms)
+
+
+Started POST "/contacts.json" for 127.0.0.1 at 2015-02-03 22:32:56 +0530
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"vjh", "phone"=>"56476476576", "email"=>"gfdhg@ghvfhj"}}
+Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`
+Completed 500 Internal Server Error in 3ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`):
+  app/controllers/contacts_controller.rb:14:in `create'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.1ms)
+
+
+Started POST "/contacts.json" for 127.0.0.1 at 2015-02-03 22:32:56 +0530
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"vjh", "phone"=>"56476476576", "email"=>"gfdhg@ghvfhj"}}
+Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`
+Completed 500 Internal Server Error in 3ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`):
+  app/controllers/contacts_controller.rb:14:in `create'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.0ms)
+
+
+Started POST "/contacts.json" for 127.0.0.1 at 2015-02-03 22:32:56 +0530
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"vjh", "phone"=>"56476476576", "email"=>"gfdhg@ghvfhj"}}
+Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`
+Completed 500 Internal Server Error in 4ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`):
+  app/controllers/contacts_controller.rb:14:in `create'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.4ms)
+
+
+Started POST "/contacts.json" for 127.0.0.1 at 2015-02-03 22:32:56 +0530
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"vjh", "phone"=>"56476476576", "email"=>"gfdhg@ghvfhj"}}
+Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`
+Completed 500 Internal Server Error in 3ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`):
+  app/controllers/contacts_controller.rb:14:in `create'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.3ms)
+
+
+Started POST "/contacts.json" for 127.0.0.1 at 2015-02-03 22:32:57 +0530
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"vjh", "phone"=>"56476476576", "email"=>"gfdhg@ghvfhj"}}
+Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`):
+  app/controllers/contacts_controller.rb:14:in `create'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.8ms)
+
+
+Started POST "/contacts.json" for 127.0.0.1 at 2015-02-03 22:32:57 +0530
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"vjh", "phone"=>"56476476576", "email"=>"gfdhg@ghvfhj"}}
+Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`
+Completed 500 Internal Server Error in 3ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`):
+  app/controllers/contacts_controller.rb:14:in `create'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.1ms)
+
+
+Started POST "/contacts.json" for 127.0.0.1 at 2015-02-03 22:32:57 +0530
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"vjh", "phone"=>"56476476576", "email"=>"gfdhg@ghvfhj"}}
+Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`
+Completed 500 Internal Server Error in 3ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`):
+  app/controllers/contacts_controller.rb:14:in `create'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.1ms)
+
+
+Started POST "/contacts.json" for 127.0.0.1 at 2015-02-03 22:32:57 +0530
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"vjh", "phone"=>"56476476576", "email"=>"gfdhg@ghvfhj"}}
+Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`):
+  app/controllers/contacts_controller.rb:14:in `create'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (51.2ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (65.9ms)
+
+
+Started POST "/contacts.json" for 127.0.0.1 at 2015-02-03 22:32:57 +0530
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"vjh", "phone"=>"56476476576", "email"=>"gfdhg@ghvfhj"}}
+Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`
+Completed 500 Internal Server Error in 3ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`):
+  app/controllers/contacts_controller.rb:14:in `create'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.9ms)
+
+
+Started POST "/contacts.json" for 127.0.0.1 at 2015-02-03 22:32:58 +0530
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"vjh", "phone"=>"56476476576", "email"=>"gfdhg@ghvfhj"}}
+Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`
+Completed 500 Internal Server Error in 3ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`):
+  app/controllers/contacts_controller.rb:14:in `create'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.2ms)
+
+
+Started POST "/contacts.json" for 127.0.0.1 at 2015-02-03 22:32:58 +0530
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"vjh", "phone"=>"56476476576", "email"=>"gfdhg@ghvfhj"}}
+Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`
+Completed 500 Internal Server Error in 3ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`):
+  app/controllers/contacts_controller.rb:14:in `create'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.8ms)
+
+
+Started POST "/contacts.json" for 127.0.0.1 at 2015-02-03 22:32:58 +0530
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"vjh", "phone"=>"56476476576", "email"=>"gfdhg@ghvfhj"}}
+Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`
+Completed 500 Internal Server Error in 4ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`):
+  app/controllers/contacts_controller.rb:14:in `create'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.9ms)
+
+
+Started POST "/contacts.json" for 127.0.0.1 at 2015-02-03 22:32:58 +0530
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"vjh", "phone"=>"56476476576", "email"=>"gfdhg@ghvfhj"}}
+Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`):
+  app/controllers/contacts_controller.rb:14:in `create'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.8ms)
+
+
+Started POST "/contacts.json" for 127.0.0.1 at 2015-02-03 22:32:58 +0530
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"vjh", "phone"=>"56476476576", "email"=>"gfdhg@ghvfhj"}}
+Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`
+Completed 500 Internal Server Error in 3ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`):
+  app/controllers/contacts_controller.rb:14:in `create'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.7ms)
+
+
+Started POST "/contacts.json" for 127.0.0.1 at 2015-02-03 22:32:58 +0530
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"vjh", "phone"=>"56476476576", "email"=>"gfdhg@ghvfhj"}}
+Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`):
+  app/controllers/contacts_controller.rb:14:in `create'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (68.5ms)
+
+
+Started POST "/contacts.json" for 127.0.0.1 at 2015-02-03 22:32:59 +0530
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"vjh", "phone"=>"56476476576", "email"=>"gfdhg@ghvfhj"}}
+Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`
+Completed 500 Internal Server Error in 3ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`):
+  app/controllers/contacts_controller.rb:14:in `create'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.8ms)
+
+
+Started POST "/contacts.json" for 127.0.0.1 at 2015-02-03 22:32:59 +0530
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"vjh", "phone"=>"56476476576", "email"=>"gfdhg@ghvfhj"}}
+Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`
+Completed 500 Internal Server Error in 3ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`):
+  app/controllers/contacts_controller.rb:14:in `create'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.7ms)
+
+
+Started POST "/contacts.json" for 127.0.0.1 at 2015-02-03 22:32:59 +0530
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"vjh", "phone"=>"56476476576", "email"=>"gfdhg@ghvfhj"}}
+Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`):
+  app/controllers/contacts_controller.rb:14:in `create'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 22:33:55 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 100ms (Views: 99.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 22:33:55 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 22:33:55 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 22:33:55 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 22:33:55 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 22:33:55 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 22:33:55 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 22:33:55 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 22:33:55 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 22:33:55 +0530
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 22:33:55 +0530
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.6ms)[0m  SELECT `contacts`.* FROM `contacts`
+Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SELECT `contacts`.* FROM `contacts`
+Completed 500 Internal Server Error in 3ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SELECT `contacts`.* FROM `contacts`):
+  app/controllers/contacts_controller.rb:8:in `block (2 levels) in index'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.4ms)
+
+
+Started POST "/contacts.json" for 127.0.0.1 at 2015-02-03 22:43:59 +0530
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"vjh", "phone"=>"56476476576", "email"=>"gfdhg@ghvfhj"}}
+Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`
+Completed 500 Internal Server Error in 4ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`):
+  app/controllers/contacts_controller.rb:14:in `create'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.9ms)
+
+
+Started POST "/contacts.json" for 127.0.0.1 at 2015-02-03 22:44:00 +0530
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"vjh", "phone"=>"56476476576", "email"=>"gfdhg@ghvfhj"}}
+Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`
+Completed 500 Internal Server Error in 3ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`):
+  app/controllers/contacts_controller.rb:14:in `create'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.8ms)
+
+
+Started POST "/contacts.json" for 127.0.0.1 at 2015-02-03 22:44:00 +0530
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"vjh", "phone"=>"56476476576", "email"=>"gfdhg@ghvfhj"}}
+Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`
+Completed 500 Internal Server Error in 3ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`):
+  app/controllers/contacts_controller.rb:14:in `create'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started POST "/contacts.json" for 127.0.0.1 at 2015-02-03 22:44:00 +0530
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"vjh", "phone"=>"56476476576", "email"=>"gfdhg@ghvfhj"}}
+Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`
+Completed 500 Internal Server Error in 41ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`):
+  app/controllers/contacts_controller.rb:14:in `create'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.8ms)
+
+
+Started POST "/contacts.json" for 127.0.0.1 at 2015-02-03 22:44:00 +0530
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"vjh", "phone"=>"56476476576", "email"=>"gfdhg@ghvfhj"}}
+Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`
+Completed 500 Internal Server Error in 3ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`):
+  app/controllers/contacts_controller.rb:14:in `create'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.2ms)
+
+
+Started POST "/contacts.json" for 127.0.0.1 at 2015-02-03 22:44:00 +0530
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"vjh", "phone"=>"56476476576", "email"=>"gfdhg@ghvfhj"}}
+Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`
+Completed 500 Internal Server Error in 4ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`):
+  app/controllers/contacts_controller.rb:14:in `create'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.4ms)
+
+
+Started POST "/contacts.json" for 127.0.0.1 at 2015-02-03 22:44:01 +0530
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"vjh", "phone"=>"56476476576", "email"=>"gfdhg@ghvfhj"}}
+Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`
+Completed 500 Internal Server Error in 3ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`):
+  app/controllers/contacts_controller.rb:14:in `create'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.6ms)
+
+
+Started POST "/contacts.json" for 127.0.0.1 at 2015-02-03 22:44:01 +0530
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"vjh", "phone"=>"56476476576", "email"=>"gfdhg@ghvfhj"}}
+Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`):
+  app/controllers/contacts_controller.rb:14:in `create'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.5ms)
+
+
+Started POST "/contacts.json" for 127.0.0.1 at 2015-02-03 22:44:01 +0530
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"vjh", "phone"=>"56476476576", "email"=>"gfdhg@ghvfhj"}}
+Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`
+Completed 500 Internal Server Error in 3ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`):
+  app/controllers/contacts_controller.rb:14:in `create'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.3ms)
+
+
+Started POST "/contacts.json" for 127.0.0.1 at 2015-02-03 22:44:01 +0530
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"vjh", "phone"=>"56476476576", "email"=>"gfdhg@ghvfhj"}}
+Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`):
+  app/controllers/contacts_controller.rb:14:in `create'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.3ms)
+
+
+Started POST "/contacts.json" for 127.0.0.1 at 2015-02-03 22:44:01 +0530
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"vjh", "phone"=>"56476476576", "email"=>"gfdhg@ghvfhj"}}
+Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`
+Completed 500 Internal Server Error in 3ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`):
+  app/controllers/contacts_controller.rb:14:in `create'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.6ms)
+
+
+Started POST "/contacts.json" for 127.0.0.1 at 2015-02-03 22:44:01 +0530
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"vjh", "phone"=>"56476476576", "email"=>"gfdhg@ghvfhj"}}
+Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`
+Completed 500 Internal Server Error in 40ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`):
+  app/controllers/contacts_controller.rb:14:in `create'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.3ms)
+
+
+Started POST "/contacts.json" for 127.0.0.1 at 2015-02-03 22:44:01 +0530
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"vjh", "phone"=>"56476476576", "email"=>"gfdhg@ghvfhj"}}
+Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`
+Completed 500 Internal Server Error in 4ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`):
+  app/controllers/contacts_controller.rb:14:in `create'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.9ms)
+
+
+Started POST "/contacts.json" for 127.0.0.1 at 2015-02-03 22:44:02 +0530
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"vjh", "phone"=>"56476476576", "email"=>"gfdhg@ghvfhj"}}
+Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`
+Completed 500 Internal Server Error in 3ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`):
+  app/controllers/contacts_controller.rb:14:in `create'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.4ms)
+
+
+Started POST "/contacts.json" for 127.0.0.1 at 2015-02-03 22:44:02 +0530
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"vjh", "phone"=>"56476476576", "email"=>"gfdhg@ghvfhj"}}
+Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`
+Completed 500 Internal Server Error in 3ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`):
+  app/controllers/contacts_controller.rb:14:in `create'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.5ms)
+
+
+Started POST "/contacts.json" for 127.0.0.1 at 2015-02-03 22:44:02 +0530
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"vjh", "phone"=>"56476476576", "email"=>"gfdhg@ghvfhj"}}
+Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`
+Completed 500 Internal Server Error in 5ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`):
+  app/controllers/contacts_controller.rb:14:in `create'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.1ms)
+
+
+Started POST "/contacts.json" for 127.0.0.1 at 2015-02-03 22:44:02 +0530
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"vjh", "phone"=>"56476476576", "email"=>"gfdhg@ghvfhj"}}
+Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`
+Completed 500 Internal Server Error in 3ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SHOW FULL FIELDS FROM `contacts`):
+  app/controllers/contacts_controller.rb:14:in `create'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 22:45:20 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 115ms (Views: 113.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 22:45:20 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 22:45:20 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 22:45:20 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 22:45:20 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 22:45:20 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 22:45:20 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 22:45:20 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 22:45:20 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 22:45:20 +0530
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 22:45:21 +0530
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.9ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SELECT `contacts`.* FROM `contacts`
+Completed 500 Internal Server Error in 3ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'spoonjoy_development.contacts' doesn't exist: SELECT `contacts`.* FROM `contacts`):
+  app/controllers/contacts_controller.rb:8:in `block (2 levels) in index'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.7ms)
+  [1m[36mActiveRecord::SchemaMigration Load (22.8ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateContacts (20150129212518)
+  [1m[35m (139.9ms)[0m  CREATE TABLE `contacts` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `email` varchar(255), `phone` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES (?)  [["version", "20150129212518"]]
+  [1m[36m (39.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.6ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 22:51:41 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (2.9ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (48.9ms)
+Completed 200 OK in 339ms (Views: 324.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 22:51:42 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 22:51:42 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 22:51:42 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 22:51:42 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 22:51:42 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 22:51:42 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 22:51:42 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 22:51:42 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 22:51:42 +0530
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 22:51:43 +0530
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.8ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 22:51:48 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 100ms (Views: 98.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 22:51:48 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 22:51:48 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 22:51:48 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 22:51:48 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 22:51:48 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 22:51:48 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 22:51:48 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 22:51:48 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 22:51:48 +0530
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 22:51:48 +0530
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/contacts.json" for 127.0.0.1 at 2015-02-03 22:52:14 +0530
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"Dilip", "phone"=>"1234565690"}}
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mSQL (9.1ms)[0m  [1mINSERT INTO `contacts` (`created_at`, `name`, `phone`, `updated_at`) VALUES (?, ?, ?, ?)[0m  [["created_at", "2015-02-03 17:22:15"], ["name", "Dilip"], ["phone", "1234565690"], ["updated_at", "2015-02-03 17:22:15"]]
+  [1m[35m (74.1ms)[0m  COMMIT
+Completed 200 OK in 174ms (Views: 1.0ms | ActiveRecord: 85.4ms)
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 22:52:15 +0530
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.7ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 22:52:15 +0530
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.4ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/contacts/1.json" for 127.0.0.1 at 2015-02-03 22:52:33 +0530
+Processing by ContactsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mContact Load (0.8ms)[0m  [1mSELECT  `contacts`.* FROM `contacts`  WHERE `contacts`.`id` = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 26ms (Views: 0.6ms | ActiveRecord: 0.8ms)
+
+
+Started PUT "/contacts/1.json" for 127.0.0.1 at 2015-02-03 22:52:44 +0530
+Processing by ContactsController#update as JSON
+  Parameters: {"contact"=>{"id"=>1, "name"=>"Dilip", "email"=>"farji@sao.com", "phone"=>"1234565690", "created_at"=>"2015-02-03T17:22:15.000Z", "updated_at"=>"2015-02-03T17:22:15.000Z"}, "id"=>"1"}
+  [1m[35mContact Load (0.3ms)[0m  SELECT  `contacts`.* FROM `contacts`  WHERE `contacts`.`id` = ? LIMIT 1  [["id", 1]]
+Unpermitted parameters: id, created_at, updated_at
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (33.5ms)[0m  UPDATE `contacts` SET `email` = ?, `updated_at` = ? WHERE `contacts`.`id` = 1  [["email", "farji@sao.com"], ["updated_at", "2015-02-03 17:22:44"]]
+  [1m[36m (37.8ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 81ms (Views: 0.8ms | ActiveRecord: 71.7ms)
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 22:52:44 +0530
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.8ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 5ms (Views: 0.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 22:52:44 +0530
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/contacts/1.json" for 127.0.0.1 at 2015-02-03 22:52:53 +0530
+Processing by ContactsController#destroy as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mContact Load (0.6ms)[0m  SELECT  `contacts`.* FROM `contacts`  WHERE `contacts`.`id` = ? LIMIT 1  [["id", 1]]
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  DELETE FROM `contacts` WHERE `contacts`.`id` = ?  [["id", 1]]
+  [1m[36m (37.5ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 43ms (Views: 0.3ms | ActiveRecord: 39.0ms)
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 22:52:53 +0530
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.7ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 22:52:54 +0530
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.5ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 22:52:54 +0530
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.4ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 22:55:12 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 61ms (Views: 59.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 22:55:12 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 22:55:12 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 22:55:12 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 22:55:12 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 22:55:12 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 22:55:12 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 22:55:12 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 22:55:12 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 22:55:12 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:01:24 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 101ms (Views: 99.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:01:24 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 23:01:24 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 23:01:24 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 23:01:24 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:01:24 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 23:01:24 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 23:01:24 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 23:01:24 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 23:01:24 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:01:57 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 102ms (Views: 100.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 23:01:57 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:01:57 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:01:57 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 23:01:57 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 23:01:57 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 23:01:57 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 23:01:57 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 23:01:57 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 23:01:57 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:01:59 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 107ms (Views: 105.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:01:59 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 23:01:59 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:01:59 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 23:01:59 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 23:01:59 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 23:01:59 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 23:01:59 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 23:01:59 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 23:01:59 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:02:04 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:02:04 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:04:02 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 63ms (Views: 61.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:04:02 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 23:04:02 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:04:02 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 23:04:02 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 23:04:02 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 23:04:02 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 23:04:02 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 23:04:02 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 23:04:02 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:05:02 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 102ms (Views: 100.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:05:02 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 23:05:02 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 23:05:02 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 23:05:02 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:05:02 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 23:05:02 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 23:05:02 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 23:05:02 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 23:05:02 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:07:33 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 102ms (Views: 98.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:07:34 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 23:07:34 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 23:07:34 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:07:34 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 23:07:34 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 23:07:34 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 23:07:34 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 23:07:34 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 23:07:34 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:07:43 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 127ms (Views: 124.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 23:07:43 +0530
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.4ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 23:07:47 +0530
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:07:49 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 97ms (Views: 95.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:07:49 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:07:49 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 23:07:49 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 23:07:49 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 23:07:49 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 23:07:49 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 23:07:49 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 23:07:49 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 23:07:49 +0530
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 23:07:50 +0530
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.4ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:07:52 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 75ms (Views: 74.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:10:51 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 396ms (Views: 364.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:10:52 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 23:10:52 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 23:10:52 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 23:10:52 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:10:52 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 23:10:53 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 23:10:53 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 23:10:53 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 23:10:53 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:11:12 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 103ms (Views: 101.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:11:12 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 23:11:12 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:11:12 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 23:11:12 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 23:11:12 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 23:11:12 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 23:11:12 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 23:11:12 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 23:11:12 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:11:14 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 106ms (Views: 104.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:11:14 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 23:11:14 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 23:11:14 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 23:11:14 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 23:11:14 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:11:14 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 23:11:14 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 23:11:14 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 23:11:14 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:11:15 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 104ms (Views: 63.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 23:11:15 +0530
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (57.1ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 61ms (Views: 0.3ms | ActiveRecord: 57.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:11:17 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 98ms (Views: 96.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:11:17 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:11:17 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 23:11:17 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 23:11:17 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 23:11:17 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 23:11:17 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 23:11:17 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 23:11:17 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 23:11:17 +0530
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 23:11:17 +0530
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.4ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:11:19 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 105ms (Views: 103.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:11:19 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:11:19 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 23:11:19 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 23:11:19 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 23:11:19 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 23:11:19 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 23:11:19 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 23:11:19 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 23:11:19 +0530
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 23:11:19 +0530
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.6ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 6ms (Views: 0.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:11:21 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 106ms (Views: 104.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:11:23 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 96ms (Views: 94.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:11:23 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 23:11:23 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 23:11:23 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:11:23 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 23:11:23 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 23:11:23 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 23:11:23 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 23:11:23 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 23:11:23 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:16:46 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 286ms (Views: 230.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:16:47 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 23:16:47 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:16:47 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 23:16:47 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 23:16:47 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 23:16:47 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 23:16:47 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 23:16:47 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 23:16:47 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:16:49 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 112ms (Views: 110.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:16:50 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 23:16:50 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 23:16:50 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 23:16:50 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 23:16:50 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:16:50 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 23:16:50 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 23:16:50 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 23:16:50 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:16:51 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 117ms (Views: 114.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 23:16:51 +0530
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (97.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 100ms (Views: 0.4ms | ActiveRecord: 97.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:16:53 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 102ms (Views: 101.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:16:53 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 23:16:53 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 23:16:53 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 23:16:53 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 23:16:53 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:16:53 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 23:16:53 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 23:16:53 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 23:16:53 +0530
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 23:16:53 +0530
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.6ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:16:55 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 99ms (Views: 98.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:16:55 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:16:55 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 23:16:55 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 23:16:55 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 23:16:55 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 23:16:55 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 23:16:55 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 23:16:55 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 23:16:55 +0530
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 23:16:55 +0530
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:19:28 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 310ms (Views: 255.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:19:29 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 23:19:29 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:19:29 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 23:19:29 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 23:19:29 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 23:19:29 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 23:19:29 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 23:19:29 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 23:19:29 +0530
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 23:19:29 +0530
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (60.2ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 64ms (Views: 0.4ms | ActiveRecord: 60.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:19:36 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 68ms (Views: 66.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:19:36 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 23:19:36 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:19:36 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 23:19:36 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 23:19:36 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 23:19:36 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 23:19:36 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 23:19:36 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 23:19:36 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:24:34 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 109ms (Views: 107.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:24:35 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:24:35 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 23:24:35 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 23:24:35 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 23:24:35 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 23:24:35 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 23:24:35 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 23:24:35 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 23:24:35 +0530
+
+
+Started POST "/contacts.json" for 127.0.0.1 at 2015-02-03 23:28:12 +0530
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"Nitin", "phone"=>"1234567890"}}
+  [1m[36mSQL (83.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (178.1ms)[0m  INSERT INTO `contacts` (`created_at`, `name`, `phone`, `updated_at`) VALUES (?, ?, ?, ?)  [["created_at", "2015-02-03 17:58:12"], ["name", "Nitin"], ["phone", "1234567890"], ["updated_at", "2015-02-03 17:58:12"]]
+  [1m[36m (84.5ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 398ms (Views: 27.7ms | ActiveRecord: 345.9ms)
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 23:28:13 +0530
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (2.7ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 8ms (Views: 0.9ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/contacts.json" for 127.0.0.1 at 2015-02-03 23:28:24 +0530
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"Raghav", "phone"=>"8374837483748"}}
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `contacts` (`created_at`, `name`, `phone`, `updated_at`) VALUES (?, ?, ?, ?)  [["created_at", "2015-02-03 17:58:24"], ["name", "Raghav"], ["phone", "8374837483748"], ["updated_at", "2015-02-03 17:58:24"]]
+  [1m[36m (74.5ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 79ms (Views: 0.5ms | ActiveRecord: 75.2ms)
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 23:28:25 +0530
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.7ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 5ms (Views: 0.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 23:28:25 +0530
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.5ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 5ms (Views: 0.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:29:42 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 104ms (Views: 102.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:29:42 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:29:42 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 23:29:42 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 23:29:42 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 23:29:42 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 23:29:42 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 23:29:42 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 23:29:42 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 23:29:42 +0530
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 23:29:43 +0530
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.5ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 8ms (Views: 0.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:29:52 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 104ms (Views: 102.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:29:53 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 23:29:53 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 23:29:53 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 23:29:53 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 23:29:53 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:29:53 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 23:29:53 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 23:29:53 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 23:29:53 +0530
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 23:29:53 +0530
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.4ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 6ms (Views: 0.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:34:04 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 104ms (Views: 102.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:34:04 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:34:04 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 23:34:04 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 23:34:04 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 23:34:04 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 23:34:04 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 23:34:04 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 23:34:04 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 23:34:04 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:34:43 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 101ms (Views: 98.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:34:43 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 23:34:43 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:34:43 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 23:34:43 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 23:34:43 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 23:34:43 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 23:34:43 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 23:34:43 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 23:34:43 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:35:05 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 99ms (Views: 97.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:35:05 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 23:35:05 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 23:35:05 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 23:35:05 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:35:05 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 23:35:05 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 23:35:05 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 23:35:05 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 23:35:05 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:35:34 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 102ms (Views: 100.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:35:35 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:35:35 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 23:35:35 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 23:35:35 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 23:35:35 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 23:35:35 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 23:35:35 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 23:35:35 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 23:35:35 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:35:37 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 97ms (Views: 95.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:35:37 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 23:35:37 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 23:35:37 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:35:37 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 23:35:37 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 23:35:37 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 23:35:37 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 23:35:37 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 23:35:37 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:37:19 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:37:19 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:37:44 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 105ms (Views: 102.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:37:45 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 23:37:45 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 23:37:45 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 23:37:45 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 23:37:45 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:37:45 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 23:37:45 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 23:37:45 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 23:37:45 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:40:35 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 106ms (Views: 104.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:40:35 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 23:40:35 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 23:40:35 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 23:40:35 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 23:40:35 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 23:40:35 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:40:35 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 23:40:35 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 23:40:35 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:42:56 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 123ms (Views: 121.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:42:56 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 23:42:56 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 23:42:56 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 23:42:56 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 23:42:56 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:42:56 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 23:42:56 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 23:42:56 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 23:42:56 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:43:30 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 102ms (Views: 101.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 23:43:30 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:43:30 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:43:30 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 23:43:30 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 23:43:30 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 23:43:30 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 23:43:30 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 23:43:30 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 23:43:30 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:43:47 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 103ms (Views: 101.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:43:47 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:43:47 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 23:43:47 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 23:43:47 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 23:43:47 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 23:43:47 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 23:43:47 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 23:43:47 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 23:43:47 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:44:43 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 101ms (Views: 100.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:44:43 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 23:44:43 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 23:44:43 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 23:44:43 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:44:43 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 23:44:43 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 23:44:43 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 23:44:43 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 23:44:43 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:45:02 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 102ms (Views: 100.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:45:02 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 23:45:02 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:45:02 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 23:45:02 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 23:45:02 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 23:45:02 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 23:45:02 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 23:45:02 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 23:45:02 +0530
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 23:45:33 +0530
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (138.4ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 215ms (Views: 36.6ms | ActiveRecord: 138.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:46:01 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 99ms (Views: 98.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:46:01 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 23:46:01 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 23:46:01 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 23:46:01 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:46:01 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 23:46:01 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 23:46:01 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 23:46:01 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 23:46:01 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:46:16 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 117ms (Views: 115.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 23:46:16 +0530
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.5ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:46:18 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 99ms (Views: 98.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:46:19 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 23:46:19 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 23:46:19 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 23:46:19 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 23:46:19 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 23:46:19 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 23:46:19 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 23:46:19 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:46:19 +0530
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 23:46:19 +0530
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.3ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 5ms (Views: 0.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/contacts/2.json" for 127.0.0.1 at 2015-02-03 23:46:21 +0530
+Processing by ContactsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mContact Load (194.1ms)[0m  [1mSELECT  `contacts`.* FROM `contacts`  WHERE `contacts`.`id` = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 227ms (Views: 0.5ms | ActiveRecord: 194.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:47:09 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 100ms (Views: 98.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:47:10 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:47:10 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 23:47:10 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 23:47:10 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 23:47:10 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 23:47:10 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 23:47:10 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 23:47:10 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 23:47:10 +0530
+
+
+Started GET "/contacts/2.json" for 127.0.0.1 at 2015-02-03 23:47:10 +0530
+Processing by ContactsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[35mContact Load (0.3ms)[0m  SELECT  `contacts`.* FROM `contacts`  WHERE `contacts`.`id` = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 23:47:20 +0530
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/contacts/3.json" for 127.0.0.1 at 2015-02-03 23:47:22 +0530
+Processing by ContactsController#show as JSON
+  Parameters: {"id"=>"3"}
+  [1m[35mContact Load (0.6ms)[0m  SELECT  `contacts`.* FROM `contacts`  WHERE `contacts`.`id` = ? LIMIT 1  [["id", 3]]
+Completed 200 OK in 6ms (Views: 0.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/contacts/3.json" for 127.0.0.1 at 2015-02-03 23:47:30 +0530
+Processing by ContactsController#show as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mContact Load (0.4ms)[0m  [1mSELECT  `contacts`.* FROM `contacts`  WHERE `contacts`.`id` = ? LIMIT 1[0m  [["id", 3]]
+Completed 200 OK in 7ms (Views: 0.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/contacts/3.json" for 127.0.0.1 at 2015-02-03 23:47:30 +0530
+Processing by ContactsController#show as JSON
+  Parameters: {"id"=>"3"}
+  [1m[35mContact Load (0.2ms)[0m  SELECT  `contacts`.* FROM `contacts`  WHERE `contacts`.`id` = ? LIMIT 1  [["id", 3]]
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 23:47:36 +0530
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 23:47:36 +0530
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.2ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/contacts.json" for 127.0.0.1 at 2015-02-03 23:49:09 +0530
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"name"=>"dfkj", "phone"=>"11111111111111111111111111"}}
+  [1m[36mSQL (46.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (66.6ms)[0m  INSERT INTO `contacts` (`created_at`, `name`, `phone`, `updated_at`) VALUES (?, ?, ?, ?)  [["created_at", "2015-02-03 18:19:10"], ["name", "dfkj"], ["phone", "11111111111111111111111111"], ["updated_at", "2015-02-03 18:19:10"]]
+  [1m[36m (68.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 186ms (Views: 0.5ms | ActiveRecord: 180.7ms)
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 23:49:10 +0530
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.7ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 5ms (Views: 0.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 23:49:10 +0530
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/contacts/4.json" for 127.0.0.1 at 2015-02-03 23:49:16 +0530
+Processing by ContactsController#show as JSON
+  Parameters: {"id"=>"4"}
+  [1m[35mContact Load (0.4ms)[0m  SELECT  `contacts`.* FROM `contacts`  WHERE `contacts`.`id` = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:49:22 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 103ms (Views: 101.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 23:49:22 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 23:49:22 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:49:22 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 23:49:23 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 23:49:23 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:49:23 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 23:49:23 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 23:49:23 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 23:49:23 +0530
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 23:49:23 +0530
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.4ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 7ms (Views: 0.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 23:49:39 +0530
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.4ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 6ms (Views: 1.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 23:49:39 +0530
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:49:56 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 101ms (Views: 99.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:49:56 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 23:49:56 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:49:56 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 23:49:56 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 23:49:56 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 23:49:56 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 23:49:56 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 23:49:56 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 23:49:56 +0530
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 23:49:56 +0530
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.4ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 8ms (Views: 1.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/contacts/3.json" for 127.0.0.1 at 2015-02-03 23:49:58 +0530
+Processing by ContactsController#show as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mContact Load (0.5ms)[0m  [1mSELECT  `contacts`.* FROM `contacts`  WHERE `contacts`.`id` = ? LIMIT 1[0m  [["id", 3]]
+Completed 200 OK in 8ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2015-02-03 23:50:00 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 94ms (Views: 92.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 23:50:17 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 100ms (Views: 98.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-02-03 23:50:18 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-02-03 23:50:18 +0530
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2015-02-03 23:50:18 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 23:50:18 +0530
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2015-02-03 23:50:18 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-02-03 23:50:18 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 23:50:18 +0530
+
+
+Started GET "/assets/angular/controller/contacts_controller.js?body=1" for 127.0.0.1 at 2015-02-03 23:50:18 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 23:50:18 +0530
+
+
+Started GET "/contacts/3.json" for 127.0.0.1 at 2015-02-03 23:50:18 +0530
+Processing by ContactsController#show as JSON
+  Parameters: {"id"=>"3"}
+  [1m[35mContact Load (0.4ms)[0m  SELECT  `contacts`.* FROM `contacts`  WHERE `contacts`.`id` = ? LIMIT 1  [["id", 3]]
+Completed 200 OK in 9ms (Views: 1.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 23:50:20 +0530
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.5ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 7ms (Views: 2.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 23:50:24 +0530
+Processing by ContactsController#index as JSON
+  [1m[35mContact Load (0.4ms)[0m  SELECT `contacts`.* FROM `contacts`
+Completed 200 OK in 5ms (Views: 0.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/contacts.json" for 127.0.0.1 at 2015-02-03 23:50:24 +0530
+Processing by ContactsController#index as JSON
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT `contacts`.* FROM `contacts`[0m
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.2ms)

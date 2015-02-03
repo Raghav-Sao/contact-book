@@ -1,0 +1,26 @@
+<br/>
+<div class="row center-block">
+    <div class="col-md-12">
+        <a class="btn btn-primary" href="#/contacts/new">Create a contact</a>
+        <h3 class="block">Contacts</h3>
+        <table class="table table-striped .table-hover">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th></th>
+            </tr>
+            <tr ng-hide="contacts.length" >
+                <td colspan="5">No contacts found, Please create one.</td>
+            </tr>
+            <tr ng-show="contacts.length" ng-repeat="contact in contacts">
+                <td>{{contact.name}}</td>
+                <td>{{contact.email}}</td>
+                <td>{{contact.phone}}</td>
+                <td>
+                    <a href="#/contacts/{{contact.id}}/edit">Edit</a> | <a href="" ng-click="deleteContact(contact.id)">Remove</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
